@@ -1,0 +1,189 @@
+/* * {
+  box-sizing: border-box;
+} */
+.dashboard {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.column {
+  float: left;
+  /* width: 50%; */
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.buttonDahboard {
+  outline: none;
+  border: none;
+  background-color: #26353a;
+  font-weight: bold;
+  color: white;
+  padding-block: 10px;
+  padding-inline: 15px;
+  border-radius: 5px;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+.buttonDahboard:hover {
+  background-color: #1e2a2e;
+}
+.buttonDahboard:active {
+  color: rgb(185, 185, 185);
+}
+
+.adversaries {
+  background-color: #1e2a2e;
+  padding-block: 20px;
+  width: 100%;
+  min-height: 94%;
+}
+
+.dashboardItems {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* grid-template-columns: auto auto; */
+}
+.sortButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-inline: 10px;
+  border-radius: 20px;
+  padding-block: 10px;
+  margin-left: 30px;
+  border: solid #121212 1px;
+}
+.sortButton:hover {
+  border-color: gray;
+}
+.sortButton:active {
+  border-color: gray;
+}
+.topFilterVul {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  /* margin: auto; */
+  margin-left: 15px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+  justify-content: space-around;
+}
+/* .topFilterVul div {
+  width: 90%;
+} */
+.filContent {
+  width: 30%;
+  height: 40px;
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .topFilterVul {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: flex-start;
+  }
+  .filContent {
+    width: 90%;
+  }
+}
+.searchVul {
+  display: flex;
+  flex-direction: row;
+}
+.searchVul input {
+  color: white;
+  padding-left: 10px;
+  background-color: #121212;
+  outline: none;
+  border: solid 1px gray;
+  border-radius: 3px;
+  font-size: 18px;
+  width: 100%;
+}
+.searchVul button {
+  background-color: gray;
+  outline: none;
+  border: none;
+  background-color: #cc0000;
+  margin-left: 10px;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  width: 50%;
+}
+.searchVul button:active {
+  background-color: #cc0000ad;
+}
+.valBorder {
+  margin: auto;
+  width: 95%;
+  border: solid 0.1px gray;
+  margin-top: 20px;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+.valBorder::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.innerVal {
+  width: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+.innerVal::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.valHead {
+  display: flex;
+  flex-direction: row;
+  color: gray;
+  font-size: 18px;
+  font-weight: bold;
+  padding-block: 5px;
+  border: solid 2px gray;
+  justify-content: space-around;
+}
+.valItems {
+  display: flex;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 18px;
+  padding-block: 5px;
+  justify-content: space-around;
+}
+.linkTag {
+  color: white;
+  text-decoration-line: none;
+}
+.linkTag:hover {
+  color: blueviolet;
+}

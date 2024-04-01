@@ -1,0 +1,112 @@
+.homeBgImage {
+  height: 35vw;
+  background-image: url("../../assets/images/ParticlesBackground.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: inherit;
+}
+
+.bar {
+  width: 100%;
+}
+
+.barContainer {
+  position: relative;
+  width: calc(70% - 0.1rem);
+  height: 1em;
+  background-color: white;
+  border-radius: 3em;
+  margin: auto;
+}
+
+.barContainer::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: #cc0000;
+  width: 30%;
+  border-radius: 3em;
+  padding: 0.5em;
+}
+
+.percentage {
+  width: calc(70% - 0.1rem);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.percentage > span {
+  font-weight: 500;
+  color: white;
+  padding-top: 1em;
+}
+
+.policyHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  background-color: #26353a;
+}
+.policyHeader text {
+  z-index: 100;
+}
+.policyContent {
+  padding-inline: 5%;
+  background-color: #1d1d1d;
+}
+.indexes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 8vh;
+  flex-wrap: wrap;
+}
+.border {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  padding: 20px 20px 20px 0px;
+  max-width: 370px;
+  min-width: 370px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 10px;
+}
+.border ul li {
+  list-style-type: disc;
+  padding: 5px 0px;
+}
+
+.border ul li {
+  color: #a6a6a6;
+}
+
+.border ul li a {
+  color: #a6a6a6;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.border ul li a:hover {
+  color: #cc0000;
+}
+
+@media (max-width: 768px) {
+  .indexes {
+    justify-content: center;
+  }
+}
+
+.link {
+  color: #a6a6a6;
+  text-decoration-line: underline;
+}
+.link:hover {
+  color: #cc0000;
+}

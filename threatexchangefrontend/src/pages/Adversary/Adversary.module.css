@@ -1,0 +1,99 @@
+.adversary {
+  width: 100%;
+  min-height: 100vh;
+}
+.adversaryContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.adversaryBlock {
+  width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  height: min-content;
+}
+.tools {
+  border: solid 1px gray;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 5px;
+  padding-block: 8px;
+  padding-inline: 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.tools:hover {
+  color: white;
+  border-color: white;
+}
+.tools:active {
+  background-color: gray;
+  border-color: transparent;
+}
+.topContent {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.topContent div {
+  width: 80%;
+}
+.sponsor {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #005528;
+  padding: 8px;
+  margin: 2px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.observerd {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.observerd div {
+  width: 50%;
+}
+
+.observerdSector {
+  color: white;
+  background-color: rgb(46, 46, 46);
+  padding-inline: 5px;
+  padding-block: 5px;
+  margin: 3px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.observerdCountry {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #26353a;
+  padding-inline: 5px;
+  padding-block: 5px;
+  margin: 3px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.operation {
+  background-color: #26353a;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .adversaryContent {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .adversaryBlock {
+    width: 90%;
+    margin-top: 10px;
+  }
+}

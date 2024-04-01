@@ -1,0 +1,169 @@
+.divide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.left {
+  width: 70%;
+}
+.right {
+  width: 25%;
+}
+.clButton{
+  color: #ffffffcc;
+  background-color: #26353a;
+  outline: none;
+  border: none;
+  padding: 2px;
+  font-size: 12;
+}
+.clButton:hover{
+  color: white;
+}
+
+.subButton{
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: #26353a;
+  color: rgba(255, 255, 255, 0.8);
+}
+.subButton:hover{
+  color: white;
+}
+.subButton:active{
+  background-color: red;
+}
+.subActiveButton{
+  background-color: red;
+}
+@media (max-width: 768px) {
+  .divide {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    width: 95%;
+  }
+  .right {
+    width: 95%;
+  }
+}
+.border {
+  background-color: #1d1d1d;
+  border-top: solid 2px gray;
+  border-radius: 3px;
+  padding: 8px;
+  margin-block: 15px;
+}
+.MainBox {
+  background-color: #a6a6a6;
+  border-radius: 3px;
+  padding-top: 5px;
+  margin-block: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.vulContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mainContent {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .vulContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainContent {
+    width: 90%;
+  }
+}
+.labelBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin-block: 5px;
+}
+.tagItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tagItems text {
+  font-size: 14px;
+  color: white;
+  background-color: #26353a;
+  border-radius: 3px;
+  padding: 6px;
+  margin: 3px;
+}
+.timlineBox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+}
+.editIcon {
+  color: white;
+  background-color: #26353a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.timelineLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timeLine {
+  width: 3px;
+  height: 270px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.timelineRight {
+  width: 100%;
+  padding-left: 10px;
+}
+.editBorder {
+  min-height: 250px;
+  margin-top: 50px;
+}
+
+.dashInput{
+    color: white;
+    height: 30px;
+    background-color: #121212;
+    outline: none;
+    border: solid 1px gray;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.dashButton{
+    height: 30px;
+    background-color: gray;
+    outline: none;
+    border: none;
+    background-color: #cc0000;
+    border-radius: 3px;
+    color: white;
+}
+
+.dashButton:active {
+  background-color: #cc0000ad;
+}
+

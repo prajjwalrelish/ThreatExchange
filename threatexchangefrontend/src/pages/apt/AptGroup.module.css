@@ -1,0 +1,54 @@
+.aptGroupPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.left{
+    width: 60%;
+}
+.right{
+    width:30%;
+    height: min-content;
+}
+.even{
+    background-color: rgba(0,0,0,0.1);
+}
+.row:hover{
+    background-color: rgba(0,0,0,0.3);
+    transition: all 0.2s;
+}
+.filterBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.788);
+    background-color: #26353a;
+    margin: 1px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+}
+.filterBox:hover{
+    background-color: #26353a78;
+}
+.overflowBox {
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.overflowBox::-webkit-scrollbar{
+    width: 0px;
+}
+@media (max-width: 768px) {
+    .aptGroupPage{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left{
+        width: 97%;
+    }
+    .right{
+        width: 97%;
+    }
+}

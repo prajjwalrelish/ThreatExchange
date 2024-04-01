@@ -1,0 +1,97 @@
+.sidebar {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebarButton {
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  padding-block: 15px;
+  border-right: solid 3px transparent;
+  display: flex;
+  flex-direction: row;
+  padding-inline: 20px;
+  transition: all 0.3s;
+}
+.sidebarButton:hover{
+  color: white;
+}
+.dropButton{
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  padding-block: 15px;
+  border-right: solid 3px transparent;
+  display: flex;
+  flex-direction: row;
+  padding-inline: 20px;
+  justify-content: space-between;
+}
+.dropButton:hover{
+  color: white;
+}
+.activeSideBar {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.6);
+  background-color: #121212;
+}
+.activeDropButton{
+  background-color: #272727;
+  color: white;
+}
+.dropIcon{
+  color: gray;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+.iconOpen{
+  transform: rotate(90deg);
+}
+.subButtons{
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+.subButton{
+  font-size: 16px;
+  padding-block: 10px;
+}
+.hideSub{
+  display: none;
+}
+.showSub{
+  display: block;
+}
+.cross {
+  display: none;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    height: 100vh;
+    z-index: 100;
+    left: -280px;
+    top: 0px;
+    transition: all 0.3s;
+  }
+  .sideBarActive {
+    left: 0px;
+  }
+  .cross {
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-block: 30px;
+  }
+  .cross:active {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

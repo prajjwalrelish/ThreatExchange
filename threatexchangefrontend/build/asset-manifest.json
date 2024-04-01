@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.acf7763f.chunk.css",
+    "main.js": "/static/js/main.056fefb5.chunk.js",
+    "main.js.map": "/static/js/main.056fefb5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.76319c08.js",
+    "runtime-main.js.map": "/static/js/runtime-main.76319c08.js.map",
+    "static/css/2.ae9e5f60.chunk.css": "/static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.40e4611b.chunk.js": "/static/js/2.40e4611b.chunk.js",
+    "static/js/2.40e4611b.chunk.js.map": "/static/js/2.40e4611b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ae9e5f60.chunk.css.map": "/static/css/2.ae9e5f60.chunk.css.map",
+    "static/css/main.acf7763f.chunk.css.map": "/static/css/main.acf7763f.chunk.css.map",
+    "static/js/2.40e4611b.chunk.js.LICENSE.txt": "/static/js/2.40e4611b.chunk.js.LICENSE.txt",
+    "static/media/Home.module.css": "/static/media/ParticlesBackground.861a8b46.jpeg",
+    "static/media/bell-icon.6657646f.svg": "/static/media/bell-icon.6657646f.svg",
+    "static/media/home-icon.f981ee9d.svg": "/static/media/home-icon.f981ee9d.svg",
+    "static/media/user-icon.780a52a3.svg": "/static/media/user-icon.780a52a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76319c08.js",
+    "static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.40e4611b.chunk.js",
+    "static/css/main.acf7763f.chunk.css",
+    "static/js/main.056fefb5.chunk.js"
+  ]
+}

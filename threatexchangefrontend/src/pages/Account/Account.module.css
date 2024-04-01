@@ -1,0 +1,73 @@
+.profile {
+  width: 45%;
+}
+.subscriptions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.border {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  margin-block: 50px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  height: fit-content;
+}
+.header {
+  padding: 8px;
+  padding-left: 15px;
+  color: white;
+  font-size: 18px;
+  border-bottom: solid gray 2px;
+}
+.vendor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 8px;
+  padding-inline: 10px;
+}
+.vendor text {
+  color: rgba(255, 255, 255, 0.8);
+}
+.button {
+  border: none;
+  color: white;
+  background-color: #cc0000;
+  padding-block: 5px;
+}
+.buttonInActive {
+  background-color: rgb(63, 63, 63);
+}
+.button:active {
+  background-color: #cc0000ad;
+}
+
+.clButton {
+  color: #ffffffcc;
+  background-color: #26353a;
+  outline: none;
+  border: none;
+  padding: 8px;
+  font-size: 20;
+}
+.clButton:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    width: 90%;
+  }
+  .subscriptions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .border {
+    width: 95%;
+  }
+}
